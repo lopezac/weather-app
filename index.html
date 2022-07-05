@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Weather app</title>
+  <script src="index.bundle.js" defer></script>
+</head>
+<body>
+  <h1>Weather App</h1>
+  <form>
+    <input type="text" id="citySearch" name="cityInput">
+    <button type="button" class="search-city-btn">Search</button>
+  </form>
+  <main class="content">
+    <h2 class="city-name"></h2>
+    <p class="today-date"></p>
+
+    <div class="temperature-selector">
+      <p class="c-selector">°C</p>
+      <p class="f-selector">°F</p>
+    </div>
+
+    <div class="info">
+      <p class="weather-name"></p>
+      <p class="weather-info"></p>
+    </div>
+
+    <div class="temperatures">
+      <p class="temp"></p>
+      <p class="min-temp"></p>
+      <p class="max-temp"></p>
+    </div>
+
+    <div class="extra-info">
+      <p class="wind"></p>
+      <p class="humidity"></p>
+    </div>
+  </main>
+</body>
+</html>
