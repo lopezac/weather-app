@@ -4,6 +4,9 @@ module.exports = {
   entry: {
     index: "./src/index.js",
     weatherAPI: "./src/weatherAPI.js",
+    gifAPI: "./src/gifAPI.js",
+    searchForm: "./src/searchForm.js",
+    styles: "./src/styles.css",
   },
   output: {
     path: path.resolve(__dirname, "dist"),

@@ -1,0 +1,95 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  --lighter-gray: #F9FAFB;
+  --light-gray: #F3F4F6;
+  --medium-gray: #E5E7EB;
+  --dark-gray: #D1D5DB;
+  --rain-color: #9CA3AF;
+  --sky: #BAE6FD;
+}
+
+/* Color sets */
+
+.color-1 {
+  background-color: var(--sky);
+}
+
+.color-2 {
+  background-color: var(--light-gray);
+}
+
+.color-3 {
+  background-color: var(--medium-gray);
+}
+
+.color-4 {
+  background-color: var(--dark-gray);
+}
+
+.color-5 {
+  background-color: var(--lighter-gray);
+}
+
+.color-6 {
+  background-color: var(--rain-color);
+}
+
+/* Title */
+
+.title {
+
+}
+
+/* Form */
+
+form {
+
+}
+
+form input {
+
+}
+
+.search-city-btn {
+
+
+}
+
+/* Weather div */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "cityTitle date temp-selectors"
+                       "info temperatures extra-info";
+}
+
+.content .city-name {
+  grid-area: cityTitle;
+}
+
+.content .today-date {
+  grid-area: date;
+}
+
+.content .temperature-selector {
+  grid-area: temp-selectors;
+  display: flex;
+}
+
+.content .info {
+  grid-area: info;
+}
+
+.content .temperatures {
+  grid-area: temperatures;
+}
+
+.content .extra-info {
+  grid-area: extra-info;
+}

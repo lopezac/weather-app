@@ -25,7 +25,6 @@ const weatherAPI = (() => {
   };
 
   const getCityData = async (cityName) => {
-    console.log(cityName);
     const rawData = await fetchData(cityName);
     return processData(rawData, cityName);
   };

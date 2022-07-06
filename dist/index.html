@@ -6,34 +6,41 @@
   <script src="index.bundle.js" defer></script>
 </head>
 <body>
-  <h1>Weather App</h1>
-  <form>
-    <input type="text" id="citySearch" name="cityInput">
-    <button type="button" class="search-city-btn">Search</button>
-  </form>
-  <main class="content">
-    <h2 class="city-name"></h2>
-    <p class="today-date"></p>
+  <main class="main-div">
+    <h1 class="title">Weather App</h1>
+    <form>
+      <input type="text" id="citySearch" name="cityInput">
+      <button type="button" class="search-city-btn">Search</button>
+    </form>
+    <main class="content">
+      <h2 class="city-name"></h2>
+      <p class="today-date"></p>
 
-    <div class="temperature-selector">
-      <p class="c-selector">°C</p>
-      <p class="f-selector">°F</p>
-    </div>
+      <div class="temperature-selector">
+        <p class="c-selector">°C</p>
+        <p class="f-selector">°F</p>
+      </div>
 
-    <div class="info">
-      <p class="weather-name"></p>
-      <p class="weather-info"></p>
-    </div>
+      <div class="info">
+        <p class="weather-name"></p>
+        <p class="weather-info"></p>
+      </div>
 
-    <div class="temperatures">
-      <p class="temp"></p>
-      <p class="min-temp"></p>
-      <p class="max-temp"></p>
-    </div>
+      <div class="temperatures">
+        <p class="temp"></p>
+        <p class="min-temp"></p>
+        <p class="max-temp"></p>
+      </div>
 
-    <div class="extra-info">
-      <p class="wind"></p>
-      <p class="humidity"></p>
+      <div class="extra-info">
+        <p class="wind"></p>
+        <p class="humidity"></p>
+      </div>
+    </main>
+
+    <div class="gif-related">
+      <p>Gif related to the weather</p>
+      <img class="weather-gif">
     </div>
   </main>
 </body>
