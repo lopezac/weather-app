@@ -7,6 +7,7 @@ module.exports = {
     gifAPI: "./src/gifAPI.js",
     searchForm: "./src/searchForm.js",
     styles: "./src/styles.css",
+    changeGifs: "./src/changeGifs.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
