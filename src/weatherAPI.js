@@ -1,9 +1,10 @@
 const weatherAPI = (() => {
   const API_KEY = "e185190e436ac4dd5d57136155d2e9ca";
+  let units = "metric";
 
   const fetchData = async (cityName) => {
     const data = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=${units}`,
       { mode: "cors" }
     );
     const json = await data.json();
@@ -16,7 +17,6 @@ const weatherAPI = (() => {
       temp: data.main.temp,
       tempMin: data.main.temp_min,
       tempMax: data.main.temp_max,
-      // tempFeels: data.main.feels_like,
       humidity: data.main.humidity,
       weatherName: data.weather[0].main,
       weatherInfo: data.weather[0].description,
@@ -29,7 +29,11 @@ const weatherAPI = (() => {
     return processData(rawData, cityName);
   };
 
-  return { getCityData };
+  const setUnits = (unit) => {
+    units = unit;
+  };
+
+  return { getCityData, setUnits };
 })();
 
 export default weatherAPI;
