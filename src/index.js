@@ -3,7 +3,6 @@ import gifAPI from "./gifAPI.js";
 import SearchForm from "./searchForm.js";
 import ChangeGifs from "./changeGifs.js";
 
-import "./styles.css";
 import "modern-normalize";
 
 (() => {
